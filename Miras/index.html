@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJ COFFEE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;900&family=Montserrat:wght@500&family=PT+Sans:wght@400;700&family=Poppins:wght@100;300;400;500;600&family=Roboto:ital,wght@0,300;0,500;1,300;1,400&display=swap" rel="stylesheet">
+<link
+rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+crossorigin="anonymous"
+/>
+<!-- <script src="JS/jquery-3.5.1.min.js"></script>
+<script src="JS/multislider.min.js"></script> -->
+</head>
+<body>
+        <header class="footer">
+            <img class="logo_coffe" src="img/mjlogo-removebg-preview.png" alt="logotip">
+            <div class="menu_container">
+                <div class="menu_text">
+                    <p class="lng-text_menu_1">Кофе</p>
+                    <p class="lng-text_menu_2">Десерттер</p>
+                    <a href="" class="lng-text_menu_3">Торт</a>
+                    <!-- <a href="" class="lng-text_menu_4">Пирог</a> -->
+                    <select class="change-lang">
+                        <option value="kz" selected>KZ</option>
+                        <option value="ru">RU</option>
+                        <option value="en">EN</option>
+                    </select>
+                    <div class="shopping-cart">
+                        <div class="sum-prices">
+                            <!--Shopping cart logo-->
+                            <i class="fas fa-shopping-cart shoppingCartButton"></i>
+                            <span class="total_quantity">0</span>
+                            <!--The total prices of products in the shopping cart -->
+                            <h6 id="sum-prices"></h6>
+                        </div>
+                    </div>
+        </header>        
+        <div id="modal" class="lng-modal">
+            Заказ добавлен в корзину!
+          </div>
+
+          
+          <div class="producstOnCart hide">
+            <div class="overlay"></div>
+            <div class="top">
+                <button id="closeButton">
+                    <i class="fas fa-times-circle"></i>
+                </button>
+                <h3 class="lng-cart">Себет</h3>
+                <button class="lng-button-remove-all">Себетті тазалаңыз</button>
+            </div>
+            <ul id="buyItems">
+                <h4 class="lng-empty">Сіздің сауда себетіңіз бос</h4>
+                <!-- <li class="buyItem">
+                    <img src="Images/producs-images/Mobiles/galaxynote10.png">
+                    <div>
+                        <h5>Products Name</h5>
+                        <h6>$199</h6>
+                        <div>
+                            <button>-</button>
+                            <span class="countOfProduct">1</span>
+                            <button>+</button>
+                        </div>
+                    </div>
+                </li> -->
+            </ul>
+            <button class="btn checkout hidden"><a class="lng-go_to_registration" href="/order.html">Check out</a></button>
+        </div>
+          
+    <div class="container">
+        </div>
+
+        <div id="confirmationBlock" class="confirmation-block hide">
+            <h4 class="lng-confirmation">Сіз барлық заттарды себеттен алып тастағыңыз келетініне сенімдісіз бе?</h4>
+            <button id="lng-confirmDeleteButton" class="lng-confirmDeleteButton">Иа</button>
+            <button id="lng-cancelDeleteButton" class="lng-cancelDeleteButton">Жоқ</button>
+          </div>
+        <div>
+
+            <img class="coffee_grain" src="img/coffee_grain.png" alt="">
+    
+            <img class="menu_png" src="https://icdn.lenta.ru/images/2021/11/09/17/20211109170725715/detail_2dfc4c4eee8baad682130b5c45fe8996.jpg" alt="">
+            <div class="cap"><p class="text_cap">cappucino</p></div>
+        </div>
+        <div class="enjoy_coffee">
+            <p class="lng-text_enjoy">Сабақ алдында бір кесе  <span style="color: orange;">кофе</span> ішіңіз</p>
+        </div>
+        <div class="lng-enjoy_coffee_2">
+            Таңертеңгі кофемен өнімділікті арттырыңыз және көңіл-күйіңізді көтеріңіз
+        </div>
+ 
+        <div>
+            <img class="coffee_grain_2" src="img/coffee_grain_2.png" alt="">
+            <p class="lng-popular_now">Танымал өнімдер</p>
+        </div>
+        <div class="backgroundFont">
+            <img src="img/rectangle_font.png" alt="">
+            
+        <div class="list">
+                      
+        </div> 
+        <div class="help">
+            <h2 class="lng-howto"></h2>
+            <div class="delivery_service">
+            </div>
+        </div>
+        <div class="delivers">
+            <div class="delivery1">
+                <img src="img/deliv1.png" alt=""> 
+                <p class="lng-choose"></p>
+                <p class="lng-choose_text"></p>
+            </div>
+            <div class="delivery2">
+                <img src="img/deliv2.png" alt=""> 
+                <p class="lng-del"></p>
+                <p class="lng-del_text"></p>
+            </div>
+            <div class="delivery2">
+                <img src="img/deliv3.png" alt=""> 
+                <p class="lng-enjoy"></p>
+                <p class="lng-enjoy_text"></p>
+            </div>  
+        </div>     
+        <h1 class="lng-menu_coffee"></h1>                     
+</div>  
+
+  
+<main>
+    <section class="main-section">
+        <div class="product-container">
+            <div class="products">
+                <div class="product">
+                    <div class="product-under">
+                        <figure class="product-image">
+                            <img
+                                src="img/1.jpg"
+                                alt=""
+                            />
+                        </figure>
+                        <div class="product-summary">
+                            <h4 class="productName lng-almond_croissant">Круассан миндальный</h4><br>
+                            <h6 class="price">
+                                <span class="priceValue">950</span> ₸
+                            </h6>
+                            <button
+                            class="btn btn-small addToCart wd white" onclick="addToCart()"
+                            data-product-id="1">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-under">
+                        <figure class="product-image">
+                            <img
+                            src="img/2.jpg"
+                                alt=""
+                            />
+                        </figure>
+                        <div class="product-summary">
+                            <h4 class="productName lng-Glasse_MJ_COFFEE">Гляссе MJ COFFEE</h4><br>
+                            <h6 class="price">
+                                <span class="priceValue">3600</span> ₸
+                            </h6>
+                            <button
+                            class="btn btn-small addToCart wd white" onclick="addToCart()"
+                            data-product-id="2">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="product">
+                    <div class="product-under">
+                        <figure class="product-image">
+                            <img
+                            src="img/3.jpg"
+                                alt=""
+                            />
+                        </figure>
+                        <div class="product-summary">
+                            <h4 class="productName lng-classic_croissant">Круассан классический</h4><br>
+                            <h6 class="price">
+                                <span class="priceValue">650</span>₸
+                            </h6>
+                            <button
+                            class="btn btn-small addToCart wd white" onclick="addToCart()"
+                            data-product-id="3">
+                            <i class="fas fa-cart-plus"></i>
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main-section">
+        <div class="pop-coffee">
+            <div class="pop-coffee-2">
+                <ul class="products">
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                    src="img/4.png"
+                                    alt="Ванилла латте"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-van_latte">Ванилла латте</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue"
+                                        >1200</span
+                                    >₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="4">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/hazelnut latte.png"
+                                    alt="Латте с фундуком"  
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-hazelnut_Latte">Латте с фундуком</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">999</span>₸
+                                </h4>
+                                <button 
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="5">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/6.png"
+                                    alt="Кофейное мороженое"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Coffe_Ice_Cream">Кофейное мороженое</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">2500</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="6">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/7.png"
+                                    alt="Каппучино"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Cappucino">Каппучино</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">1200</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="7">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/8.png"
+                                    alt="Мокачинно"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Moccacinno">Мокачинно</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">1000</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="8">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/10.png"
+                                    alt="Мокко бум"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Мокко_Boom">Мокко бум</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">3500</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="10">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/11.png"
+                                    alt="Флэт уайт"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Flat_White">Флэт уайт</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">2650</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="11">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/12.png"
+                                    alt="Каппучино Single"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Cappuccino_Single">Каппучино Single</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">1800</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="12">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/13.png"
+                                    alt="Mokko Single"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Mokko_Single">Mokko Single</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">2600</span>₸
+                                </h4>
+                                <button 
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="13">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <h1 class="lng-text_desserts">Десерты</h1>
+    <section class="main-section">
+        <div class="pop-coffee desserts">
+            <div class="pop-coffee-2">
+                <ul class="products">
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                    src="img/14.png"
+                                    alt="Ягодный пирог"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Berry_pie">Ягодный пирог</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue"
+                                        >1200</span
+                                    >₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="14">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/15.png"
+                                    alt="Чизкейк охлажденный"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Chilled_cheesecake">Чизкейк охлажденный</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">2000</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="15">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/16.png"
+                                    alt="Шоколадный с малиной"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Chocolate_with_raspberries">Шоколадный с малиной</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">1350</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="16">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/17.png"
+                                    alt="Три шоколада"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Three_chocolates">Три шоколада</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">1200</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="17">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/18.png"
+                                    alt="Пирог Вупи"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Whoopie_cake">Пирог Вупи</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">2300</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="18">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/19.png"
+                                    alt="Прага"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-Praga">Прага</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">1450</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="19">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+         </div>
+    </section>
+    <h1 class="lng-cakes">Торты</h1>
+    <section class="main-section">
+        <div class="pop-coffee desserts">
+            <div class="pop-coffee-2">
+                <ul class="products">
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/21.png"
+                                    alt="Crazy cake"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-crazy_cake">Crazy cake торт целый/h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">16700</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="21">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/22.png"
+                                    alt="Devils cake"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-cake_devlis">Devils cake торт целый с ягодой</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">15200</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="22">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/23.png"
+                                    alt="Devils cake"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-cake_devlis_2">Devils cake целый без ягоды
+                                </h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">13700</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="23">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/24.png"
+                                    alt="Банановый торт"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-cake_banan">Банановый торт целый без ягоды</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">11200</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="24">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/25.png"
+                                    alt="Морковный торт"
+                                />
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-cake_carrot">Морковный торт целый</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">13200</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="25">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="product">
+                        <div class="product-under">
+                            <figure class="product-image section-2">
+                                <img
+                                src="img/26.png"
+                                    alt="Торт Прага "/>
+                            </figure>
+                            <div class="product-summary">
+                                <h4 class="productName lng-cake_praga">Торт Прага целый</h4><br>
+                                <h4 class="price">
+                                    <span class="priceValue">13700</span>₸
+                                </h4>
+                                <button
+                                class="btn btn-small addToCart wd" onclick="addToCart()"
+                                data-product-id="26">
+                                <i class="fas fa-cart-plus"></i>
+                            </button>
+                            </div>
+                        </div>
+                    </li>
+                </ul>    
+            </div>
+        </div>
+    </section>          
+</main>
+
+
+<div class="container_about_2">
+    <img class="logo" src="img/mjlogo-removebg-preview.png" alt="">
+    <div class="footer_info">
+        <p class="lng-address_2"></p>
+        <p class="lng-email">E-mail: info@company.com</p>
+        <div class="social-icons">
+        <a href="https://wa.me/+77007533039?text=urlencodedtext"><img src="img/what-removebg-preview.png" alt="" class="whatsapp"></a>
+        </div>
+    </div>
+    <div class="footer_info_3">
+        <p class="lng-shop">Магазин</p>
+        <a href="about.html" class="lng-about">О нас</a>
+    </div>
+    <div class="hotline">
+        <p class="lng-phone">Телефон орячей линии</p>
+        <p class="numbers">+7 (707) 753-30-39</p>
+    </div>
+</div>
+
+<script src="script/lang.js"></script>
+<script src="shopping-cart.js"></script>
+<script src="script/script.js"></script>
+<script src="script/menu.js"></script>
+
+</body>
+</html>

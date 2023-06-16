@@ -1,0 +1,430 @@
+footer {
+  background: #fff;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  top: 0;
+  z-index: 40;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.logo {
+  width: 80px;
+  height: 60px;
+  margin-left: 105px;
+}
+
+.logo {
+  transition: transform 0.3s ease; /* Добавляем переходный эффект для свойства transform */
+}
+
+.logo:hover {
+  transform: scale(1.1); /* Увеличение в 1.2 раза */
+}
+
+.change-lang {
+  appearance: none;
+  background-position: calc(100% - 10px) center;
+  border: 1px solid black;
+  border-radius: 0;
+  font-size: 16px;
+  font-family: sans-serif;
+  color: black;
+  width: 50px;
+  height: 40px;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+  margin-right: 50px;
+  margin-top: 10px;
+} 
+
+.lng-making_an_order {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 35px;
+  line-height: 24px;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.lng-text_marking_order, .lng-text_marking_order_2 {
+  color: #727272;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 100px;
+  width: 100px;
+}
+
+
+.lng-personal_data_text, .lng-personal_data_payment, .lng-personal_data {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 24px;
+  margin-left: 100px;
+  color: #333;
+}
+
+
+.lng-in_cash, .lng-card {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.form-group {
+  margin-left: 100px;
+  margin-bottom: 10px;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 24px;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+}
+
+.phoneNumber{
+  margin-left: 25px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-stretch: expanded;   
+}
+
+input {
+  width: 350px;
+  height: 40px;
+  padding: 6px 12px 6px 20px;
+  line-height: 1.42857143;
+  background-color: #f4f4f4;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: none;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  outline: 0!important;
+}
+
+.city {
+  width: 381px;
+  height: 48px;
+  padding: 6px 12px 6px 20px;
+  line-height: 1.42857143;
+  background-color: #f4f4f4;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  box-shadow: none;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  outline: 0!important;
+}
+
+.checkbox, .radio_2, .radio_3 {
+  margin-top: 20px;
+  margin-left: -12px;
+  width: 50px;
+  height: 20px;
+}
+
+.radio_2, .radio_3 {
+  margin-top: -1px;
+  margin-left: 90px;
+} 
+
+.radio_3 {
+  margin-left: 40px;
+}
+
+.courier {
+  margin-top: 18px;
+  position: absolute;
+}
+
+.home {
+  margin-left: 100px;
+}
+.house, .apartment, .building {
+  width: 50px;  
+  margin-left: -70px;
+}
+
+.lng-house_text, .lng-apartment_text, .lng-building_text {
+  width: 50px;  
+  margin-left: -70px;
+}
+
+.floor, .entrance {
+  width: 50px;
+}
+.lng-floor_text, .floor {
+  margin-left: 410px;
+}
+.lng-entrance_text, .entrance {
+  margin-left: -69px;
+}
+
+textarea {
+  max-width: 710px;
+  width: 710px;
+  height: 200px;
+  border-radius: 15px;
+  background-color: #f4f4f4;
+  border: none;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  padding: 10px;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.textarea {
+  margin-top: 50px;
+}
+
+#expiryMonth, #expiryYear {
+  width: 50px;
+}
+
+#expiryYear {
+  margin-left: 20px;
+}
+
+#cardPaymentBlock{
+  margin-top: 20px;
+}
+
+.lng-btn_order {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  padding: 10px;
+  font-size: 15px;
+  line-height: 24px;
+  margin-left: 100px;
+  width: 730px;
+  height: 50px;
+  color: #fff;
+  background-color: #393939;
+  text-align: center;
+  border-radius: 15px;
+  border: none;
+
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style-type: none; /* Убираем маркеры */
+  padding-left: 0; /* Убираем отступ слева */
+}
+.buyItem {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.buyItem img {
+  border-radius: 15px;
+  width: 120px;
+  height: 100px;
+  margin-right: 10px;
+}
+
+.product-actions {
+  display: flex;
+  align-items: center;
+}
+
+.productName {
+  color: #333;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  display: inline-block;
+  margin: 0;
+}
+
+.checkout {
+  background-color: white;
+  border: none  ;
+}
+
+.button-remove {
+  position: absolute;
+  margin-right: 10px;
+  font-size: 15px;
+  background-color: #f4f4f4;
+  color: rgb(175, 22, 22);
+  border: none;
+  padding: 5px 10px;
+  margin-left: 10px;
+  cursor: pointer;
+  text-align: right;
+}
+
+.product-price {
+  color: #333;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  margin: 5px 0;
+}
+
+.button-minus,
+.button-plus {
+  background-color: #f2f2f2;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;  
+  font-size: 17px;
+}
+
+.button-minus:hover,
+.button-plus:hover {
+  background-color: #cbc9c9;
+} 
+
+.basket_text {
+  color: #333;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.countOfProduct {
+  color: #333;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 0 10px;
+}
+
+.producstOnCart {
+  position: absolute;
+  background: #f4f4f4;
+  float: right;
+  border-color: #f4f4f4;
+  width: 450px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 100px;
+  margin-top: -1200px;
+  margin-left: 920px;
+  padding-left: 20px;
+}
+
+hr{
+  width: 440px;
+}
+
+.lng-quantity{
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+
+#sum-prices {
+  margin-left: 245px;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 15px;
+}
+
+.lng-delivery {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 24px;
+  margin-left: 5px;
+  margin-top: -1px;
+}
+
+.total_quantity_text{
+  margin-left: 215px;
+  margin-top: 10px;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.total {
+  margin-left: 293px;
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 200;
+  font-size: 17px;
+}
+
+.lng-To_be_paid {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  margin-left: 5px;
+}
+
+.lng-error_2 {
+  font-family: "HelveticaNeueCyr",sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+}
+
+#error {
+  display: none; /* Скрыть элемент изначально */
+  color: red; /* Цвет текста */
+  font-weight: bold; /* Жирный шрифт */
+  position: fixed; /* Позиционирование элемента */
+  top: 50%; /* Расположение от верхней границы страницы */
+  left: 50%; /* Расположение от левой границы страницы */
+  transform: translate(-50%, -50%); /* Центрирование элемента */
+  background-color: #f8d7da; /* Цвет фона */
+  padding: 10px; /* Отступы внутри элемента */
+  border: 1px solid #f5c6cb; /* Граница элемента */
+  border-radius: 4px; /* Скругление углов */
+  z-index: 9999; /* Индекс по оси Z для установки поверх других элементов */
+}
+
+form input.error{
+  border-color:red;
+}
+
+.check {
+  width: 400px;
+  height: 300px;
+}
+
+.successfully {
+  display: none;
+  position: fixed; /* Позиционирование элемента */
+  top: 50%; /* Расположение от верхней границы страницы */
+  left: 50%; /* Расположение от левой границы страницы */
+  transform: translate(-50%, -50%); /* Центрирование элемента */
+  background-color: #39fd4c; /* Цвет фона */
+  padding: 10px; /* Отступы внутри элемента */
+  border: 1px solid #39fd4c; /* Граница элемента */
+  border-radius: 50px; /* Скругление углов */
+  z-index: 9999; /* Индекс по оси Z для установки поверх других элементов */
+}
+
+
+
